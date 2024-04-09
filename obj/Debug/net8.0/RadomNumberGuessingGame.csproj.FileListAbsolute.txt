@@ -1,0 +1,14 @@
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\bin\Debug\net8.0\RadomNumberGuessingGame.exe
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\bin\Debug\net8.0\RadomNumberGuessingGame.deps.json
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\bin\Debug\net8.0\RadomNumberGuessingGame.runtimeconfig.json
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\bin\Debug\net8.0\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\bin\Debug\net8.0\RadomNumberGuessingGame.pdb
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.AssemblyInfoInputs.cache
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.AssemblyInfo.cs
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.csproj.CoreCompileInputs.cache
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\refint\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.pdb
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\RadomNumberGuessingGame.genruntimeconfig.cache
+C:\Users\MCA-9\source\repos\RadomNumberGuessingGame\obj\Debug\net8.0\ref\RadomNumberGuessingGame.dll
