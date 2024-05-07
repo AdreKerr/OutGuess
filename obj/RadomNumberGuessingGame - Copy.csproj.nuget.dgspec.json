@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame.csproj": {}
+    "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame - Copy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame.csproj": {
+    "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame - Copy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame.csproj",
-        "projectName": "RadomNumberGuessingGame",
-        "projectPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame.csproj",
+        "projectUniqueName": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame - Copy.csproj",
+        "projectName": "RadomNumberGuessingGame - Copy",
+        "projectPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame - Copy.csproj",
         "packagesPath": "C:\\Users\\MCA-9\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\obj\\",
         "projectStyle": "PackageReference",

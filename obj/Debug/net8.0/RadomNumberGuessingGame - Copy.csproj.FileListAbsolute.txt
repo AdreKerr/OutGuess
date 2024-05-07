@@ -1,0 +1,15 @@
+C:\Users\MCA-9\Documents\GitHub\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame - Copy.exe
+C:\Users\MCA-9\Documents\GitHub\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame - Copy.deps.json
+C:\Users\MCA-9\Documents\GitHub\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame - Copy.runtimeconfig.json
+C:\Users\MCA-9\Documents\GitHub\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame - Copy.dll
+C:\Users\MCA-9\Documents\GitHub\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame - Copy.pdb
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.AssemblyInfoInputs.cache
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.AssemblyInfo.cs
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.csproj.CoreCompileInputs.cache
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.sourcelink.json
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.dll
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\refint\RadomNumberGuessingGame - Copy.dll
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.pdb
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame - Copy.genruntimeconfig.cache
+C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\ref\RadomNumberGuessingGame - Copy.dll

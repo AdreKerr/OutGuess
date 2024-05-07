@@ -111,31 +111,38 @@ namespace RadomNumberGuessingGame {
                 double wager = 0.0;
                 double winnings = 0.0;
                 double totalWinnings = 0.0;
-                int GamesPlayed = 0;
+                int GamesPlayed = 1;
+                int CarrectGuesses = 0;
+                double WinningPercent = 0.0;
                 
 
               while (wager >= cashBrought) {
 
 
                   //RULES OF GAME
-                  Console.WriteLine("This is a number guessing game where you can wager monay and how many guesses you want to use");
-                  Console.WriteLine("You can only wager up to 10 guesses");
-                  Console.WriteLine("THE AMOUNT OF GUESSES YOU WAGER WILL DETERMINE HOW MANY GUESSES YOU HAVE TO GUESS THE RIGHT NUMBER");
-                  Console.WriteLine("THE RIGHT NUMBER IS SOMEWHERE BETWEEN 1-100. IF YOU CAN NOT GUESS THE RIGHT NUMBER YOU WILL LOSS THE GAME AND THE MONEY YOU WANTED TO WAGER ON THAT BET");
-                  Console.WriteLine("HAVE FUN PLAYING, GUESSING, AND TRYNG NOT TO LOSS ALL YOUR MONEY.");
+                  Console.WriteLine("This is a number guessing game where you can wager monay and how many guesses you want to use.");
+                  Console.Write("You can only wager up to ");
+                  ColorText("10 guesses",ConsoleColor.Red);
+                  Console.WriteLine(" THE AMOUNT OF GUESSES YOU WAGER WILL DETERMINE HOW MANY GUESSES YOU HAVE TO GUESS THE RIGHT NUMBER");
+                  Console.Write("THE RIGHT NUMBER IS SOMEWHERE BETWEEN ");
+                  ColorTextInt("1-100", ConsoleColor.Red);
+                  Console.WriteLine(". IF YOU CAN NOT GUESS THE RIGHT NUMBER YOU WILL LOSS THE GAME AND THE MONEY YOU WANTED TO WAGER ON THAT BET.");
+                  ColorText("HAVE FUN PLAYING, GUESSING, AND TRYNG NOT TO LOSS ALL YOUR MONEY.",ConsoleColor.Red);
 
                 //ASK THE USES HOW MUCH CASH THEY BROUGHT TO WAGER
                 Spaces2();
+                //cashBrought = Math.Round(cashBrought, 2);
                 cashBrought = PromptDoulbeTry("How much cash do you want to gamble?: $");
 
               }//end while
 
                 //WHILE THE LOOPS TILL MONEY RUNS OUT
                 while (cashBrought > 0) {
-                    for (GamesPlayed = 1; GamesPlayed > 0; GamesPlayed++) {
+                    while (GamesPlayed > 0) {
 
 
                         //ASK THE USES HOW MUCH THEY WANT TO BET ON THE FIRST GAME
+                       // wager = Math.Round (wager, 2);
                         wager = PromptDoulbeTry($"How much money would you like to wager on game {GamesPlayed} you have ${cashBrought} left?: $");
 
                         //ASK PLAYER HOW MANY GUESSES THEY WANT TO WAGER
@@ -143,31 +150,33 @@ namespace RadomNumberGuessingGame {
                     
                         //RNG 
                         int cpuNum = RNG.Next(1, 101);
-
                         //IF FOR THE GUESSES AND LOOP TO CONTUNIE
                         if (playerGesses <= 10 && playerGesses >= 1 && wager > 0 && wager <= cashBrought) {
                         //CALCULATIONS 
                         cashBrought = cashBrought - wager;
                             //LOOP
                             for (int guesses = playerGesses; guesses > 0; guesses--) {
-                                Spaces1();
                                 //ASK THE PLAYER FOR THERE GUESS
+                                Spaces2();
                                 playerNumber = PromptIntTry("Enter your guess?: ");
                                 Spaces1();
                                 //IF ELSE STATMENT
                                 if (playerNumber > 100 || playerNumber < 1) {
                                     FlickerError();
-                                    Console.WriteLine("YOU NEED TO ENTER A NUMBER 1-100!!!");
-                                    //ColorText("ERROR!!!!", ConsoleColor.DarkRed);
+                                    Console.WriteLine("YOU NEED TO ENTER A NUMBER 1-100!!! ");
+                                    Spaces2();
                                     ColorText($"You have {guesses - 1} guesses left", ConsoleColor.Gray);
                                 } else if (cpuNum > playerNumber) {
                                     ColorText("Your guess is to low", ConsoleColor.Yellow);
+                                    Spaces1();
                                     ColorText($"You have {guesses - 1} guesses left", ConsoleColor.Gray);
                                 } else if (cpuNum < playerNumber) {
                                     ColorText("Your guess is to high", ConsoleColor.DarkYellow);
+                                    Spaces1();
                                     ColorText($"You have {guesses - 1} guesses left", ConsoleColor.Gray);
                                 } else if (cpuNum == playerNumber) {
                                     ColorText("Your guess is right!!", ConsoleColor.Green);
+                                    Spaces1();
                                     ColorText($"You had {guesses - 1} guesses left", ConsoleColor.Gray);
                                     if (playerGesses == 1) {
                                         winnings = wager * 10;
@@ -211,64 +220,119 @@ namespace RadomNumberGuessingGame {
                                         Console.WriteLine($"You have won ${winnings}");
                                     } else {
                                         FlickerError();
+                                        ColorText($"You have {guesses - 1} guesses left", ConsoleColor.Gray);
                                     }//end if else in the if else
+                                     totalWinnings = totalWinnings + winnings;
                                     guesses = 0;
+                                    CarrectGuesses++;
                                 } else {
                                     FlickerError();
+                                    ColorText($"You have {guesses - 1} guesses left", ConsoleColor.Gray);
                                     break;
                                 }//END IF ELSE TREE
 
                                 //CALCULATIONS
-                                totalWinnings = totalWinnings + winnings;
-
                             }//END FOR LOOP
+                                GamesPlayed++;
 
                         //ELSE STATMENT THAT WILL TELL IF THEY ENTER A WRONG NUMBER
                         } else if (playerGesses > 10 || playerGesses < 1 || wager <= 0 || wager > cashBrought) {
                             FlickerError();
-                            Console.WriteLine("You can only have a guess 1-10");
+                            Console.WriteLine("You can only have a guess 1-10 or YOUR wager is TOO HIGH!");
+                            Spaces2();
                             break;
                         }//END IF ELSE FOR PLAYER GUESSES
-
-
                         //FIGURE OUT HOW TO END GAME IF CASHBROUGTH = 0
                         if (cashBrought == 0) {
                             FlickerGameOver();
                             Console.WriteLine($"The Number was: {cpuNum}");
                             Thread.Sleep(1000);
                             Console.Clear();
-                             //CALCULATE AVERAGE
-                             totalWinnings = totalWinnings / GamesPlayed;
-                             Console.WriteLine($"Your total percent average of winning is: {totalWinnings}");
-                            break;
+                            Console.Write($"Your total winning is: $");
+                            ColorTextDoulbe($"{totalWinnings}", ConsoleColor.Green);
+                            Spaces2();
+                            GamesPlayed = GamesPlayed - 1;
+                            WinningPercent = ((double)CarrectGuesses / (double)GamesPlayed) * 100;
+                            WinningPercent = Math.Round(WinningPercent, 2);
+                            Console.Write($"Your total percent average of winning is: ");
+                            ColorTextDoulbe($"{WinningPercent}%", ConsoleColor.Green);
+                            Spaces2 ();
+                            Console.Write($"You are leaving with $");
+                            ColorTextDoulbe($"{cashBrought}", ConsoleColor.Green);
+                            Spaces3();
+                            ColorText("Do you want to play agian?",ConsoleColor.DarkMagenta);
+                            Console.Write (" (y/n): ");
+                            if (Console.ReadKey().KeyChar.ToString().ToLower() == "y") {
+                                Spaces2();
+                                break;
+                            } else {
+                                Spaces3();
+                                //Console.WriteLine("Thanks for playing");
+                                ThanksForPlaying();
+                                Thread.Sleep(3000);
+                                Spaces3();
+                                Environment.Exit(0);
+                            }//end if else if money is 0
                         } else {
                             //TELLS GAMES OVER 
                             FlickerGameOver();
                             Console.WriteLine($"The Number was: {cpuNum}");
                             Thread.Sleep(1000);
                             Console.Clear();
-                            //game end
                         }//END IF ESLE FOR TELLLING IF YOU RAN OUT OF MONEY AND GAME OVER
-                         // ENDGAME();
+
+                            //game end
+                        //variables
                         bool done = false;
+                        int exitCode = 0;
                         Spaces2();
                         //ASK IF DONE PLAYING GAME
-                        Console.Write("Are you DONE playing (y/n): ");
+                        Console.Write("Are you ");
+                        ColorText("DONE",ConsoleColor.DarkMagenta);
+                        Console.Write(" playing? (y/n): ");
                         //done?
+                        if (Console.ReadKey().KeyChar.ToString().ToLower() == "y") {
+                            done = true;
+                            Spaces3();
+                            Thread.Sleep(500);
+                            Console.Write("Are you ");
+                            ColorText("SURE YOU ARE DONE? ", ConsoleColor.DarkMagenta);
+                            Console.Write("(y/n): ");
+                            if (Console.ReadKey().KeyChar.ToString().ToLower() == "y") {
+                                done = true;
+                                Spaces2();
+                                Console.Write($"Your total winning is: $");
+                                ColorTextDoulbe($"{totalWinnings}", ConsoleColor.Green);
+                                Spaces2();
+                                GamesPlayed = GamesPlayed - 1;
+                                WinningPercent = ((double)CarrectGuesses / (double)GamesPlayed) * 100;
+                                WinningPercent = Math.Round(WinningPercent, 2);
+                                Console.Write($"Your total percent average of winning is: ");
+                                ColorTextDoulbe($"{WinningPercent}%", ConsoleColor.Green);
+                                Spaces2();
+                                Console.Write($"You are leaving with $");
+                                ColorTextDoulbe($"{cashBrought}", ConsoleColor.Green);
+                                Spaces3();
+                                //Console.WriteLine("Thanks for playing");
+                                ThanksForPlaying();
+                                Thread.Sleep(3000);
+                                Spaces3();
+                                Environment.Exit(exitCode);
+                            } else {
+                                Spaces2();
+                                done = false;
+                            }//end inside if and esle
+                            done = false;
+                        }//end of are you done
+                        else {
+                            Spaces2();
+                            done = false;
+                        }//end IF ESLE 
 
-                            if (Console.ReadKey(true).KeyChar == 'y');
-                        done = true;
-                        Spaces2();
                     }//END FOR LOOP 
-
-                     //ASK THE USER TO MAKE SURE THAT THEY ARE DONE
-                      ENDENDGAME();
-                         totalWinnings = totalWinnings / GamesPlayed;
-                         Console.WriteLine($"Your total percent average of winning is: {totalWinnings}");
-
                 }//END WHILE CASH BROUGHT
+                     Spaces2();
             }//END While TRUE
-
         }//END FUNCITON
 
 
@@ -310,6 +374,7 @@ namespace RadomNumberGuessingGame {
         #endregion
 
 
+        
 
         #region GAME OVER FUNCIOTN
         static void GameOver(ConsoleColor color) {
@@ -342,27 +407,6 @@ namespace RadomNumberGuessingGame {
 
 
 
-        static void ENDGAME() {
-            //variables
-            bool done = false;
-            Spaces2();
-            //ASK IF DONE PLAYING GAME
-            Console.Write("Are you DONE playing (y/n): ");
-            //done?
-            done = Console.ReadKey(true).KeyChar == 'y';
-            Spaces2();
-        }//end funciton
-
-        static void ENDENDGAME() {
-            //variables
-            bool done = false;
-            Spaces2();
-            //ASK IF DONE PLAYING GAME
-            Console.Write("Are you SURE YOUR DONE playing (y/n): ");
-            //done?
-            done = Console.ReadKey(true).KeyChar == 'y';
-            Spaces2();
-        }//end funciton
 
 
         #region SPACES
@@ -388,6 +432,17 @@ namespace RadomNumberGuessingGame {
             Console.WriteLine();
         }//end funciton
 #endregion
+
+
+        static void ThanksForPlaying() {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("            <================================================>");
+            Console.WriteLine();
+            Console.WriteLine("                            Thanks For Playing               ");
+            Console.WriteLine();
+            Console.WriteLine("            <================================================>");
+            Console.ResetColor();
+        }
 
 
 
@@ -428,7 +483,7 @@ namespace RadomNumberGuessingGame {
         static string ColorText(string message, ConsoleColor color) {
             string value = "";
             Console.ForegroundColor = color;
-            Console.WriteLine(message);
+            Console.Write(message);
             Console.ResetColor();
             //value = Console.ReadLine();
             //return
@@ -453,7 +508,7 @@ namespace RadomNumberGuessingGame {
             Console.ForegroundColor = color;
             Console.Write(messege);
             Console.ResetColor();
-            value = double.Parse(Console.ReadLine());
+            //value = double.Parse(Console.ReadLine());
             //return
             return value;
         }//end funciton
@@ -512,12 +567,13 @@ namespace RadomNumberGuessingGame {
             //do while loop
             do {
                 Console.Write(dataRequest);
+            Console.ForegroundColor = ConsoleColor.White;
                 isValid = int.TryParse(Console.ReadLine(), out userInput);
                 if(isValid == false)
                 {
                     FlickerError();
                     Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.WriteLine("YOU HAVE TO ENTER A NUMBER!!!!");
+                    Console.WriteLine("YOU HAVE TO ENTER A WHOLE NUMBER!!!!");
                     Spaces1();
                     Console.ForegroundColor = ConsoleColor.Cyan;
                 }
@@ -540,8 +596,9 @@ namespace RadomNumberGuessingGame {
                 bool isValid = false;
                 //do while loop
                 do {
-                    Console.Write(dataRequest);
-                    isValid = double.TryParse(Console.ReadLine(), out userInput);
+                Console.Write(dataRequest);
+                Console.ForegroundColor = ConsoleColor.Green;
+                isValid = double.TryParse(Console.ReadLine(), out userInput);
                     if (isValid == false) {
                         FlickerError();
                         Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -574,6 +631,9 @@ namespace RadomNumberGuessingGame {
 
             //recive respones
             userInput = Console.ReadLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+
 
             //return
             return userInput;
