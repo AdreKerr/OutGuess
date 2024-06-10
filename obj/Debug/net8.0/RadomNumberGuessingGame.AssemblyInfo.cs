@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RadomNumberGuessingGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fd5efab9c7b758edea72543b43e745718cc62ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0abbbb3fea5a0ce83a499459d53a63e7f1231137")]
 [assembly: System.Reflection.AssemblyProductAttribute("RadomNumberGuessingGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RadomNumberGuessingGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
