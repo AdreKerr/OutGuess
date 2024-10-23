@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame.csproj",
+      "projectUniqueName": "C:\\Users\\MCA-9\\Documents\\GitHub\\C# Project\\Main Projects\\OutGuess\\RadomNumberGuessingGame.csproj",
       "projectName": "RadomNumberGuessingGame",
-      "projectPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\RadomNumberGuessingGame.csproj",
+      "projectPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\C# Project\\Main Projects\\OutGuess\\RadomNumberGuessingGame.csproj",
       "packagesPath": "C:\\Users\\MCA-9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\obj\\",
+      "outputPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\C# Project\\Main Projects\\OutGuess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MCA-9\\AppData\\Roaming\\NuGet\\NuGet.Config",

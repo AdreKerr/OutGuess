@@ -27,3 +27,18 @@ C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\refint\RadomNumberGues
 C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.pdb
 C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.genruntimeconfig.cache
 C:\Users\MCA-9\Documents\GitHub\OutGuess\obj\Debug\net8.0\ref\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame.exe
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame.deps.json
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame.runtimeconfig.json
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\bin\Debug\net8.0\RadomNumberGuessingGame.pdb
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.AssemblyInfoInputs.cache
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.AssemblyInfo.cs
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.csproj.CoreCompileInputs.cache
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.sourcelink.json
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\refint\RadomNumberGuessingGame.dll
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.pdb
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\RadomNumberGuessingGame.genruntimeconfig.cache
+C:\Users\MCA-9\Documents\GitHub\C# Project\Main Projects\OutGuess\obj\Debug\net8.0\ref\RadomNumberGuessingGame.dll

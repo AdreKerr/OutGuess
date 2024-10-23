@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\",
+  "WorkspaceRootPath": "C:\\Users\\MCA-9\\Documents\\GitHub\\C# Project\\Main Projects\\OutGuess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9053D26-8193-4794-AF6A-0FE8BDE00F3C}|RadomNumberGuessingGame.csproj|c:\\users\\mca-9\\documents\\github\\outguess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9053D26-8193-4794-AF6A-0FE8BDE00F3C}|RadomNumberGuessingGame.csproj|c:\\users\\mca-9\\documents\\github\\c# project\\main projects\\outguess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9053D26-8193-4794-AF6A-0FE8BDE00F3C}|RadomNumberGuessingGame.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\MCA-9\\Documents\\GitHub\\C# Project\\Main Projects\\OutGuess\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\MCA-9\\Documents\\GitHub\\OutGuess\\Program.cs",
+              "ToolTip": "C:\\Users\\MCA-9\\Documents\\GitHub\\C# Project\\Main Projects\\OutGuess\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAOYAAAAAAAAAAAAiwBABAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
